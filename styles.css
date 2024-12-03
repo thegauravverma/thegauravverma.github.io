@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;
+    height: 100%;
+    background-color: #2f2f2f; /* Changed to slight dark grey */
+    color: white;
+    padding-top: 20px;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.profile-photo img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.sidebar h2 {
+    margin: 10px 0 5px;
+}
+
+.sidebar .tagline {
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar a i {
+    margin-right: 8px;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+/* Active link styling */
+.sidebar a.active {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/* Mobile Navigation Toggle */
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.mobile-nav button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+}
+
+.mobile-nav button:focus {
+    outline: none;
+}
+
+/* Scroll to Top Button */
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #006699;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+#scrollTopBtn:hover {
+    background-color: #555;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 280px;
+    padding: 0 20px;
+}
+
+/* Sections */
+section {
+    padding: 40px 0 40px;
+    margin: 0;
+}
+
+/* Blog Posts */
+#blogs .blog-post {
+    margin-bottom: 40px;
+}
+
+#blogs .blog-post h3 {
+    margin-bottom: 10px;
+}
+
+#blogs .blog-post p {
+    margin-bottom: 10px;
+}
+
+#blogs .blog-post a {
+    color: #006699;
+}
+
+#blogs .blog-post a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-280px);
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+}
