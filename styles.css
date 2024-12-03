@@ -17,12 +17,18 @@ body {
     text-align: center;
 }
 
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
 .profile-photo img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    transform: scale(0.9); /* Adjust the scale factor as needed */
+    transform-origin: center center; /* Scale from the center */
 }
 
 .sidebar h2 {
@@ -109,7 +115,8 @@ body {
 
 /* Main Content */
 .main-content {
-    margin-left: 280px;
+    margin-left: 400px;
+    margin-right: 200px;
     padding: 0 20px;
 }
 
